@@ -44,6 +44,9 @@
       <div class="input-field col s6">
         <select name="font" v-model="font">
           <option>楷體</option>
+          <option>宋體</option>
+          <option>楷體粗體</option>
+          <option>宋體粗體</option>
         </select>
         <label>字體</label>
       </div>
@@ -52,6 +55,7 @@
       <div class="input-field col s6">
         <select name="type" v-model="types">
           <option>png</option>
+          <option>svg</option>
         </select>
         <label>格式</label>
       </div>
@@ -104,8 +108,8 @@
       return {
         request_string: '⿴辶⿴宀⿱珤⿰隹⿰貝招',
         characters: ['⿰', '⿱', '⿲', '⿳', '⿴', '⿵', '⿶', '⿷', '⿸', '⿹', '⿺'],
-        font: ['楷體','宋體','楷體粗體','宋體粗體'],
-        types: ['png','svg'],
+        font: '楷體',
+        types: 'png',
       };
     },
 
