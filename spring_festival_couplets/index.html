@@ -38,6 +38,22 @@
 
       <div class="input-field col s12" style="margin-bottom: 1em;">
         <button class="waves-effect waves-light btn btn-flat" v-for="ch in characters" v-on:click="addCh(ch)">{{ ch }}</button>
+        <br />
+        <button class="waves-effect waves-light btn btn-flat" v-for="ch in characters1" v-on:click="addCh(ch)">{{ ch }}</button>
+        <br />
+        <button class="waves-effect waves-light btn btn-flat" v-for="ch in characters2" v-on:click="addCh(ch)">{{ ch }}</button>
+        <br />
+        <button class="waves-effect waves-light btn btn-flat" v-for="ch in characters3" v-on:click="addCh(ch)">{{ ch }}</button>
+        <br />
+        <button class="waves-effect waves-light btn btn-flat" v-for="ch in characters4" v-on:click="addCh(ch)">{{ ch }}</button>
+        <br />
+        <button class="waves-effect waves-light btn btn-flat" v-for="ch in characters5" v-on:click="addCh(ch)">{{ ch }}</button>
+        <br />
+        <button class="waves-effect waves-light btn btn-flat" v-for="ch in characters6" v-on:click="addCh(ch)">{{ ch }}</button>
+        <br />
+        <button class="waves-effect waves-light btn btn-flat" v-for="ch in characters7" v-on:click="addCh(ch)">{{ ch }}</button>
+        <br />
+        <button class="waves-effect waves-light btn btn-flat" v-for="ch in characters8" v-on:click="addCh(ch)">{{ ch }}</button>
       </div>
 
       <!-- font selecter -->
@@ -102,13 +118,29 @@
 </html>
 
 <script type="text/javascript">
+  var part1 = '一丨丶丿乙亅乚乛乀⺄㇉㇀',
+part2 = '二亠人儿入八冂冖冫几凵刀力勹匕匚匸十卜卩厂厶又 亻丷〢刂⺈㔾㐅乂⺆丂龴コユ⺀ソ丩⺊丄丅丆㇇乁'
+part3 = '口囗土士夂夊夕大女子宀寸小尢尸屮山巛工己巾干幺广廴廾弋弓彐彡彳 川彑忄扌氵犭阝⻖⻏⺕䒑卄⺌⺍兀丌⺾卂乇㐄乡亇万⻌キㅌ飞习亼',
+part4 = '心戈戶手支攴文斗斤方无日曰月木欠止歹殳毋比毛氏气水火爪父爻爿片牙牛犬攵毌灬爫爫牜尣王礻⺳㓁罓冈⺼冄⺝艹艹卝辶龷廿丰丯耂龰龶⺜厃肀旡冘夬兂龵㸦冃丮巿夨仌',
+part5 = '玄玉瓜瓦甘生用田疋疒癶白皮皿目矛矢石示禸禾穴立罒歺母氺衤⺬业㠯圥犮⺻龸丱屵',
+part6 = '竹米糸缶网羊羽老而耒耳聿肉臣自至臼舌舛舟艮色艸虍虫血行衣襾糹⺶西覀冎龹乑朿产齐䇂㐆甶囟幵厽',
+part7 = '見角言谷豆豕豸貝赤走足身車辛辰辵邑酉釆里訁镸夋㒳㐬丣戼㕯皀㫃囧囱囪㡀',
+part8 = '金長門阜隶隹雨青非釒靑飠叀亝㣇甾幷面革韋韭音頁風飛食首香叚壴亯県㲋㢴馬骨高髟鬥鬯鬲鬼丵魚鳥鹵鹿麥麻桼黃黍黑黹菐黽鼎鼓鼠廌鼻齊齒嘼龍龜龠'
   var container = new Vue({
     el: '#container',
     data() {
       return {
         request_string: '⿴辶⿴宀⿱珤⿰隹⿰貝招',
         characters: ['⿰', '⿱', '⿲', '⿳', '⿴', '⿵', '⿶', '⿷', '⿸', '⿹', '⿺'],
-        font: '楷體',
+        characters1: part1.split(''),
+        characters2: part2.split(''),
+        characters3: part3.split(''),
+        characters4: part4.split(''),
+        characters5: part5.split(''),
+        characters6: part6.split(''),
+        characters7: part7.split(''),
+        characters8: part8.split(''),
+        font: '宋體粗體',
         types: 'png',
       };
     },
